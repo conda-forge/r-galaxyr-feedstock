@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GalaxyR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GalaxyR/GalaxyR_{{ version }}.tar.gz
-  sha256: ac25951e14bee13addf402316cbacc75634bf05edacdf6ab4bc28976ce5f6d32
+  sha256: 3eb5504e9a9d13f007cdd4d0830c813093a583626793eb248edd39ed94ba3be0
 
 build:
   number: 0
@@ -43,11 +43,8 @@ test:
 about:
   home: https://github.com/JulFrey/GalaxyR
   license: GPL-3.0-only
-  summary: On 'Galaxy' platforms like 'Galaxy Europe' <https://usegalaxy.eu>, many tools and
-    workflows can run directly on a high-performance computer. 'GalaxyR' connects R
-    with 'Galaxy' platforms API <https://usegalaxy.eu/api/docs> and allows credential
-    management, uploading data, invoking workflows or tools, checking their status,
-    and downloading results.
+  summary: On 'Galaxy' platforms like 'Galaxy Europe' <https://usegalaxy.eu>, many tools and workflows can run directly on a high-performance computer. 'GalaxyR' connects R with 'Galaxy' platforms API <https://usegalaxy.eu/api/docs> and allows credential management, uploading data, invoking workflows or tools, checking
+    their status, and downloading results.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
