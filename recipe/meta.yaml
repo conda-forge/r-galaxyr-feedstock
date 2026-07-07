@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/GalaxyR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/GalaxyR/GalaxyR_{{ version }}.tar.gz
-  sha256: 3eb5504e9a9d13f007cdd4d0830c813093a583626793eb248edd39ed94ba3be0
+  sha256: f3bd698cf8100caf1c037f2cb81eb98d690b9799f859aef5b5b65b9e816e2892
 
 build:
   number: 0
